@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PhoneGap Test</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<button id="add">Click Me!</button>
+	<button id="clear">Clear</button>
+	<div id="results"></div>
+	
+<script src="js/jquery-2.1.1.min.js"></script>
+<script>
+	$("#add").click( function() {
+		$("#results").append("<p> Hello World! </p>");
+	});
+	$("#clear").click( function() {
+		$("#results").empty();
+	})
+</script>
+</body>
+</html>
